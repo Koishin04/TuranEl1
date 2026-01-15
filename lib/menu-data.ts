@@ -336,7 +336,7 @@ export const menuItems = [
       ru: "Куриные крылышки, рис, лук, дунганский перец, турецкий хлеб, лаваш, красный соус",
       kk: "Тауық қанаттары, күріш, пияз, дүнген бұрышы, түрік наны, лаваш, қызыл соус",
     },
-    image: "public/IMG_8296.JPG",
+    image: "/IMG_8296.JPG",
     sizes: [{ size: "", price: 2700 }],
     category: "fire-dishes",
     subcategory: "kebabs",
