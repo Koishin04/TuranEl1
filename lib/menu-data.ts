@@ -16,7 +16,7 @@ export const categories = [
     image: "/grilled-kebab-shashlik.jpg",
     subcategories: [
       { id: "kebabs", name: { en: "Kebabs", ru: "Кебабы", kk: "Кебаптар" } },
-      { id: "shashlik", name: { en: "Shashlik", ru: "Шашлык", kk: "Шашлық" } },
+      { id: "shashlik", name: { en: "Shashlik", ru: "Шашлык", kk: "шашлык" } },
     ],
   },
   {
@@ -130,7 +130,7 @@ export const menuItems = [
   },
   {
     id: 4,
-    name: { en: "Usharal Zander", ru: "Судак по-Ушаральски", kk: "Ушарал судағы" },
+    name: { en: "Usharal Zander", ru: "Судак по-Ушаральски", kk: "Үшарал көксеркесі" },
     description: {
       en: "Zander fillet, potatoes, seaweed, pesto sauce, creamy sauce",
       ru: "Филе судака, картофель, морские водоросли, соус песто, сливочный соус",
@@ -143,7 +143,7 @@ export const menuItems = [
   },
   {
     id: 5,
-    name: { en: "Almaty Salmon", ru: "Алматинская семга", kk: "Алматы семгасы" },
+    name: { en: "Almaty Salmon", ru: "Алматинская семга", kk: "Алматы алабалық" },
     description: {
       en: "Salmon, sour cream sauce, vegetables in creamy sauce",
       ru: "Семга, сметанный соус, овощи в сливочном соусе",
@@ -157,7 +157,7 @@ export const menuItems = [
   // Hot Dishes - Steaks
   {
     id: 6,
-    name: { en: "Horse Steak", ru: "Стейк из конины", kk: "Жылқы еті стейкі" },
+    name: { en: "Horse Steak", ru: "Стейк из конины", kk: "Жылқы стейк" },
     description: {
       en: "Fire-grilled horse meat, ptitim pasta, pepper sauce",
       ru: "Конина на огне, паста птитим, перечный соус",
@@ -184,7 +184,7 @@ export const menuItems = [
   },
   {
     id: 8,
-    name: { en: "Chyz-Byz with Sour Cream", ru: "Чыз-быз со сметаной", kk: "Шыз-быз сметанамен" },
+    name: { en: "Chyz-Byz with Sour Cream", ru: "Чыз-быз со сметаной", kk: "Чыз-быз қаймақпен" },
     description: {
       en: "Beef tenderloin, potato wedges, sour cream, kurt",
       ru: "Говяжья вырезка, картофельные дольки, сметана, курт",
@@ -197,7 +197,7 @@ export const menuItems = [
   },
   {
     id: 9,
-    name: { en: "Chyz-Byz with Katyk", ru: "Чыз-быз с катыком", kk: "Шыз-быз қатықпен" },
+    name: { en: "Chyz-Byz with Katyk", ru: "Чыз-быз с катыком", kk: "Чыз-быз қатықпен" },
     description: {
       en: "Chopped beef, potato wedges, katyk, sweet chili sauce, kurt",
       ru: "Рубленая говядина, картофельные дольки, катык, соус сладкий чили, курт",
@@ -245,7 +245,7 @@ export const menuItems = [
   },
   {
     id: 13,
-    name: { en: "Kumis Ribs", ru: "Ребрышки в кумысе", kk: "Қымыздағы қабырғалар" },
+    name: { en: "Kumis Ribs", ru: "Ребрышки в кумысе", kk: "Қымыз қабырға" },
     description: {
       en: "Lamb ribs, bulgur, yogurt",
       ru: "Бараньи ребрышки, булгур, йогурт",
@@ -271,7 +271,7 @@ export const menuItems = [
   },
   {
     id: 15,
-    name: { en: "Khorezm Plov", ru: "Хорезмский плов", kk: "Хорезм палауы" },
+    name: { en: "Khorezm Plov", ru: "Хорезмский плов", kk: "Хорезм палау" },
     description: { en: "Beef, rice", ru: "Говядина, рис", kk: "Сиыр еті, күріш" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [{ size: "", price: 3400 }],
@@ -280,7 +280,7 @@ export const menuItems = [
   },
   {
     id: 16,
-    name: { en: "Maitash Chicken", ru: "Цыпленок Майташ", kk: "Майташ тауығы" },
+    name: { en: "Maitash Chicken", ru: "Цыпленок Майташ", kk: "Майташ тауық" },
     description: {
       en: "Chicken fillet, potatoes, creamy sauce",
       ru: "Куриное филе, картофель, сливочный соус",
@@ -294,7 +294,7 @@ export const menuItems = [
   // Hot Dishes - Manti
   {
     id: 17,
-    name: { en: "Pumpkin Manti", ru: "Манты с тыквой", kk: "Асқабақты манты" },
+    name: { en: "Pumpkin Manti", ru: "Манты с тыквой", kk: "Асқабақ манты" },
     description: {
       en: "Beef, tail fat, onion, pumpkin, sour cream",
       ru: "Говядина, курдючный жир, лук, тыква, сметана",
@@ -330,7 +330,7 @@ export const menuItems = [
   },
   {
     id: 20,
-    name: { en: "Chicken Wings", ru: "Куриные крылышки", kk: "Тауық қанаттары" },
+    name: { en: "Chicken Wings", ru: "Куриные крылышки", kk: "Тауық қанат" },
     description: {
       en: "Chicken wings, rice, onion, Dungan pepper, Turkish bread, lavash, red sauce",
       ru: "Куриные крылышки, рис, лук, дунганский перец, турецкий хлеб, лаваш, красный соус",
@@ -343,7 +343,7 @@ export const menuItems = [
   },
   {
     id: 21,
-    name: { en: "Duck Sashlik", ru: "Шашлык из утки", kk: "Үйрек шашлығы" },
+    name: { en: "Duck Sashlik", ru: "Шашлык из утки", kk: "Үйрек шашлык" },
     description: {
       en: "Duck meat, rice, onion, Dungan pepper, Turkish bread, lavash, red sauce",
       ru: "Мясо утки, рис, лук, дунганский перец, турецкий хлеб, лаваш, красный соус",
@@ -369,7 +369,7 @@ export const menuItems = [
   },
   {
     id: 23,
-    name: { en: "Zhapyrak Shashlik", ru: "Япрак шашлык", kk: "Жапырақ шашлық" },
+    name: { en: "Zhapyrak Shashlik", ru: "Япрак шашлык", kk: "Жапырақ шашлык" },
     description: {
       en: "Beef tenderloin, tail fat, rice, onion, Dungan pepper, Turkish bread, lavash, red sauce",
       ru: "Говяжья вырезка, курдюк, рис, лук, дунганский перец, турецкий хлеб, лаваш, красный соус",
@@ -382,7 +382,7 @@ export const menuItems = [
   },
   {
     id: 24,
-    name: { en: "Izmir Kofte", ru: "Измир кёфте", kk: "Измир көфте" },
+    name: { en: "Izmir Kofte", ru: "Измир кёфте", kk: "Измир көпте" },
     description: {
       en: "Minced beef, rice, onion, Dungan pepper, Turkish bread, lavash, red sauce",
       ru: "Фарш из говядины, рис, лук, дунганский перец, турецкий хлеб, лаваш, красный соус",
@@ -395,7 +395,7 @@ export const menuItems = [
   },
   {
     id: 25,
-    name: { en: "Lamb Shashlik", ru: "Шашлык из баранины", kk: "Қой еті шашлығы" },
+    name: { en: "Lamb Shashlik", ru: "Шашлык из баранины", kk: "Қой шашлык" },
     description: {
       en: "Lamb, rice, onion, Dungan pepper, Turkish bread, lavash, red sauce",
       ru: "Баранина, рис, лук, дунганский перец, турецкий хлеб, лаваш, красный соус",
@@ -434,7 +434,7 @@ export const menuItems = [
   },
   {
     id: 28,
-    name: { en: "Grilled Vegetables", ru: "Овощи на огне", kk: "Оттағы көкөністер" },
+    name: { en: "Grilled Vegetables", ru: "Овощи на огне", kk: "От көкөніс" },
     description: {
       en: "Vegetables grilled on open fire",
       ru: "Овощи, обжаренные на огне",
@@ -461,7 +461,7 @@ export const menuItems = [
   },
   {
     id: 30,
-    name: { en: "Tushpara", ru: "Тушпара", kk: "Түшпара" },
+    name: { en: "Tushpara", ru: "Тушпара", kk: "Тұшпара" },
     description: {
       en: "Minced beef dumplings, herbs",
       ru: "Говяжий фарш, зелень",
@@ -518,7 +518,7 @@ export const menuItems = [
   },
   {
     id: 35,
-    name: { en: "Ezogelin", ru: "Езогелин", kk: "Езогелин" },
+    name: { en: "Ezogelin", ru: "Езогелин", kk: "Езогелін" },
     description: {
       en: "Lentils, red pepper, potatoes",
       ru: "Чечевица, красный перец, картофель",
@@ -567,7 +567,7 @@ export const menuItems = [
   },
   {
     id: 39,
-    name: { en: "Aktai Baursaks", ru: "Актай баурсаки", kk: "Ақтай бауырсақтар" },
+    name: { en: "Aktai Baursaks", ru: "Актай баурсаки", kk: "Ақтай бауырсақ" },
     description: {
       en: "Traditional fried dough",
       ru: "Традиционные жареные изделия из теста",
@@ -593,7 +593,7 @@ export const menuItems = [
   },
   {
     id: 41,
-    name: { en: "Meat Samsa", ru: "Самса с мясом", kk: "Еттен жасалған самса" },
+    name: { en: "Meat Samsa", ru: "Самса с мясом", kk: "Ет самса" },
     description: {
       en: "Puff pastry with meat filling",
       ru: "Слоеное тесто с мясной начинкой",
@@ -615,7 +615,7 @@ export const menuItems = [
   },
   {
     id: 43,
-    name: { en: "Zhuka Nan", ru: "Жука нан", kk: "Жұқа нан" },
+    name: { en: "Zhuka Nan", ru: "Жука нан", kk: "Жұқпа нан" },
     description: { en: "Thin flatbread", ru: "Тонкая лепешка", kk: "Жұқа нан" },
     image: "/IMG_8397.PNG",
     sizes: [{ size: "", price: 800 }],
@@ -624,7 +624,7 @@ export const menuItems = [
   },
   {
     id: 44,
-    name: { en: "Bread Basket", ru: "Хлебная корзина", kk: "Нан себеті" },
+    name: { en: "Bread Basket", ru: "Хлебная корзина", kk: "Нан себет" },
     description: {
       en: "Aktai baursaks, meat samsa, myzhyma nan, taba nan, black bread, cottage cheese baursaks",
       ru: "Актай баурсаки, самса с мясом, мыжыма нан, таба нан, черный хлеб, творожные баурсаки",
@@ -637,7 +637,7 @@ export const menuItems = [
   },
   {
     id: 45,
-    name: { en: "Irimshik-Baursaks", ru: "Творожные баурсаки", kk: "Ірімшік бауырсақтар" },
+    name: { en: "Irimshik-Baursaks", ru: "Творожные баурсаки", kk: "Ірімшік - бауырсақ" },
     description: {
       en: "Sweet cheese balls, fluffy dough",
       ru: "Красный творог/иримшик, воздушное тесто",
@@ -664,7 +664,7 @@ export const menuItems = [
   },
   {
     id: 47,
-    name: { en: "Chytyr Manti", ru: "Чытыр манты", kk: "Шытыр манты" },
+    name: { en: "Chytyr Manti", ru: "Чытыр манты", kk: "Чытыр манты" },
     description: {
       en: "Fried manti with beef and mashed potatoes",
       ru: "Говядина, картофельное пюре",
@@ -677,7 +677,7 @@ export const menuItems = [
   },
   {
     id: 48,
-    name: { en: "Uyz Kazy", ru: "Уыз казы", kk: "Ұйыз қазы" },
+    name: { en: "Uyz Kazy", ru: "Уыз казы", kk: "Уыз қазы" },
     description: {
       en: "Kazy, bryndza cheese, cherry tomatoes",
       ru: "Казы, сыр брынза, помидоры черри",
@@ -691,7 +691,7 @@ export const menuItems = [
   // Salads
   {
     id: 49,
-    name: { en: "Choban", ru: "Чобан", kk: "Шобан" },
+    name: { en: "Choban", ru: "Чобан", kk: "Чобан" },
     description: {
       en: "Vegetable tartare, olive oil, tortilla",
       ru: "Овощной тар-тар, оливковое масло, тортилья",
@@ -704,7 +704,7 @@ export const menuItems = [
   },
   {
     id: 50,
-    name: { en: "Achuchuk", ru: "Ачу-чук", kk: "Ашу-шүк" },
+    name: { en: "Achuchuk", ru: "Ачу-чук", kk: "Ачу-чук" },
     description: {
       en: "Smoked cheese, tomatoes, red onion, cilantro",
       ru: "Копченый сыр, помидоры, красный лук, кинза",
@@ -834,7 +834,7 @@ export const menuItems = [
   },
   {
     id: 60,
-    name: { en: "Blackcurrant Mors", ru: "Каракат морс", kk: "Қарақат морсы" },
+    name: { en: "Blackcurrant mors", ru: "Морс из черный смородины", kk: "Қарақат морс" },
     description: {
       en: "Refreshing blackcurrant drink",
       ru: "Освежающий напиток из черной смородины",
@@ -850,7 +850,7 @@ export const menuItems = [
   },
   {
     id: 61,
-    name: { en: "Turan Water", ru: "Туран су", kk: "Тұран суы" },
+    name: { en: "Turan water", ru: "Туран вода", kk: "Тұран су" },
     description: { en: "Natural mineral water", ru: "Натуральная минеральная вода", kk: "Табиғи минералды су" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [{ size: "", price: 500 }],
@@ -876,7 +876,7 @@ export const menuItems = [
   },
   {
     id: 63,
-    name: { en: "Mango & Passion Fruit", ru: "Манго-маракуйя", kk: "Манго-маракуйя" },
+    name: { en: "Mango & Passion fruit", ru: "Манго-маракуйя", kk: "Манго-маракуйя" },
     description: {
       en: "Tropical mango and passion fruit",
       ru: "Манго и маракуйя",
@@ -892,7 +892,7 @@ export const menuItems = [
   },
   {
     id: 64,
-    name: { en: "Berries", ru: "Жидектер", kk: "Жидектер" },
+    name: { en: "Berry mix", ru: "Ягодный", kk: "Жидектер" },
     description: { en: "Mixed berries lemonade", ru: "Ягодный лимонад", kk: "Жидек лимонады" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [
@@ -916,7 +916,7 @@ export const menuItems = [
   },
   {
     id: 66,
-    name: { en: "Currant & Passion Fruit", ru: "Каракат-маракуйя", kk: "Қарақат-маракуйя" },
+    name: { en: "Currant & Passion Fruit", ru: "Смородина-маракуйя", kk: "Қарақат-маракуйя" },
     description: { en: "Currant and passion fruit blend", ru: "Смородина и маракуйя", kk: "Қарақат пен маракуйя" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [
@@ -928,7 +928,7 @@ export const menuItems = [
   },
   {
     id: 67,
-    name: { en: "Cucumber & Apple", ru: "Кияр-алма", kk: "Қияр-алма" },
+    name: { en: "Cucumber & Apple", ru: "Огурец-яблока", kk: "Қияр-алма" },
     description: {
       en: "Refreshing cucumber and apple",
       ru: "Освежающий огуречно-яблочный",
@@ -946,8 +946,8 @@ export const menuItems = [
     id: 68,
     name: {
       en: "Orange, Sea Buckthorn & Cinnamon",
-      ru: "Апельсин, шырғанақ, корица",
-      kk: "Апельсин, шырғанақ, дарчын",
+      ru: "Апельсин, облепиха, корица",
+      kk: "Апельсин, шырғанақ, корица",
     },
     description: {
       en: "Warming orange, sea buckthorn with cinnamon",
@@ -964,7 +964,7 @@ export const menuItems = [
   },
   {
     id: 69,
-    name: { en: "Pomegranate", ru: "Анар", kk: "Анар" },
+    name: { en: "Pomegranate", ru: "Грантовый", kk: "Анар" },
     description: { en: "Fresh pomegranate lemonade", ru: "Гранатовый лимонад", kk: "Анар лимонады" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [
@@ -976,7 +976,7 @@ export const menuItems = [
   },
   {
     id: 70,
-    name: { en: "Chamomile & Cherry", ru: "Түймедақ-шие", kk: "Түймедақ-шие" },
+    name: { en: "Chamomile & Cherry", ru: "Ромашка-вишня", kk: "Түймедақ-шие" },
     description: { en: "Chamomile tea with cherry", ru: "Ромашка с вишней", kk: "Түймедақ пен шие" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [
@@ -989,7 +989,7 @@ export const menuItems = [
   // Drinks - Hot Drinks / Teas
   {
     id: 71,
-    name: { en: "Black Tea", ru: "Кара шай", kk: "Қара шай" },
+    name: { en: "Black Tea", ru: "Черный", kk: "Қара шай" },
     description: { en: "Classic black tea", ru: "Классический черный чай", kk: "Классикалық қара шай" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [
@@ -1001,7 +1001,7 @@ export const menuItems = [
   },
   {
     id: 72,
-    name: { en: "Green Tea", ru: "Көк шай", kk: "Көк шай" },
+    name: { en: "Green Tea", ru: "Зеленый", kk: "Көк шай" },
     description: { en: "Premium green tea", ru: "Зеленый чай премиум", kk: "Премиум жасыл шай" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [
@@ -1013,7 +1013,7 @@ export const menuItems = [
   },
   {
     id: 73,
-    name: { en: "Tea with Milk", ru: "Сүтті шай", kk: "Сүтті шай" },
+    name: { en: "Tea with Milk", ru: "С молоком", kk: "Сүтті шай" },
     description: { en: "Traditional tea with milk", ru: "Традиционный чай с молоком", kk: "Дәстүрлі сүтті шай" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [
@@ -1025,7 +1025,7 @@ export const menuItems = [
   },
   {
     id: 74,
-    name: { en: "Tashkent Tea", ru: "Ташкент шай", kk: "Ташкент шайы" },
+    name: { en: "Tashkent Tea", ru: "Ташкентский", kk: "Ташкент шайы" },
     description: { en: "Traditional Tashkent style tea", ru: "Чай по-ташкентски", kk: "Ташкент стиліндегі шай" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [{ size: "", price: 2500 }],
@@ -1034,7 +1034,7 @@ export const menuItems = [
   },
   {
     id: 75,
-    name: { en: "Tea with Tara (Millet)", ru: "Тары шай", kk: "Тарылы шай" },
+    name: { en: "Tea with Tara (millet)", ru: "С Тары", kk: "Тары шай" },
     description: { en: "Tea with millet", ru: "Чай с тары (просо)", kk: "Тары қосылған шай" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [{ size: "", price: 2500 }],
@@ -1043,7 +1043,7 @@ export const menuItems = [
   },
   {
     id: 76,
-    name: { en: "Turkish Tea", ru: "Түрік шай", kk: "Түрік шайы" },
+    name: { en: "Turkish Tea", ru: "Турецкий", kk: "Түрік шай" },
     description: { en: "Strong Turkish black tea", ru: "Крепкий турецкий черный чай", kk: "Күшті түрік қара шайы" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [{ size: "", price: 2500 }],
@@ -1052,7 +1052,7 @@ export const menuItems = [
   },
   {
     id: 77,
-    name: { en: "Sea Buckthorn & Orange", ru: "Шырғанақ, апельсин", kk: "Шырғанақ-апельсин" },
+    name: { en: "Sea Buckthorn & Orange", ru: "Облепиха-апельсин", kk: "Шырғанақ-апельсин" },
     description: {
       en: "Hot sea buckthorn with orange",
       ru: "Горячий напиток из облепихи и апельсина",
@@ -1065,7 +1065,7 @@ export const menuItems = [
   },
   {
     id: 78,
-    name: { en: "Fruit & Berry Tea", ru: "Жеміс жидек", kk: "Жеміс-жидек шайы" },
+    name: { en: "Fruit & Berry tea", ru: "Фрукто-ягодный", kk: "Жеміс-жидек" },
     description: { en: "Mixed fruit and berry infusion", ru: "Фруктово-ягодный чай", kk: "Жеміс және жидек қоспасы" },
     image: "/placeholder.svg?height=112&width=112",
     sizes: [{ size: "", price: 2800 }],
@@ -1075,7 +1075,7 @@ export const menuItems = [
   // Drinks - Milkshakes
   {
     id: 79,
-    name: { en: "Oreo Milkshake", ru: "Орео", kk: "Орео милкшейк" },
+    name: { en: "Oreo", ru: "Орео", kk: "Орео" },
     description: { en: "Creamy Oreo milkshake", ru: "Сливочный милкшейк с Орео", kk: "Кремді Орео милкшейкі" },
     image: "/IMG_8427.PNG",
     sizes: [{ size: "0,5 л", price: 1600 }],
@@ -1084,7 +1084,7 @@ export const menuItems = [
   },
   {
     id: 80,
-    name: { en: "Chocolate Milkshake", ru: "Шоколад", kk: "Шоколадты милкшейк" },
+    name: { en: "Chocolate", ru: "Шоколадный", kk: "Шоколад" },
     description: { en: "Rich chocolate milkshake", ru: "Насыщенный шоколадный милкшейк", kk: "Қою шоколадты милкшейк" },
     image: "/IMG_8426.PNG",
     sizes: [{ size: "0,5 л", price: 1600 }],
@@ -1093,7 +1093,7 @@ export const menuItems = [
   },
   {
     id: 81,
-    name: { en: "Strawberry Milkshake", ru: "Құлпынай", kk: "Құлпынай милкшейкі" },
+    name: { en: "Strawberry", ru: "Клубничный", kk: "Құлпынай" },
     description: { en: "Fresh strawberry milkshake", ru: "Клубничный милкшейк", kk: "Жаңа құлпынай милкшейкі" },
     image: "/IMG_8425.PNG",
     sizes: [{ size: "0,5 л", price: 1600 }],
@@ -1102,7 +1102,7 @@ export const menuItems = [
   },
   {
     id: 82,
-    name: { en: "Vanilla Milkshake", ru: "Ваниль", kk: "Ванильді милкшейк" },
+    name: { en: "Vanilla", ru: "Ванильный", kk: "Ваниль" },
     description: {
       en: "Classic vanilla milkshake",
       ru: "Классический ванильный милкшейк",
@@ -1115,7 +1115,7 @@ export const menuItems = [
   },
   {
     id: 83,
-    name: { en: "Blackcurrant Milkshake", ru: "Каракат", kk: "Қарақат милкшейкі" },
+    name: { en: "Blackcurrant", ru: "Смородиновый", kk: "Қарақат" },
     description: {
       en: "Blackcurrant flavored milkshake",
       ru: "Милкшейк со вкусом смородины",
@@ -1128,7 +1128,7 @@ export const menuItems = [
   },
   {
     id: 84,
-    name: { en: "Banana Milkshake", ru: "Банан", kk: "Банан милкшейкі" },
+    name: { en: "Banana", ru: "Банановый", kk: "Банан" },
     description: { en: "Creamy banana milkshake", ru: "Сливочный банановый милкшейк", kk: "Кремді банан милкшейкі" },
     image: "/IMG_8430 (1).jpg",
     sizes: [{ size: "0,5 л", price: 1600 }],
@@ -1138,67 +1138,67 @@ export const menuItems = [
   // Drinks - Ice Cream
   {
     id: 85,
-    name: { en: "Vanilla Ice Cream", ru: "Ванильное мороженое", kk: "Ванильді балмұздақ" },
+    name: { en: "Vanilla", ru: "Ванильный", kk: "Ваниль" },
     description: {
       en: "Classic vanilla ice cream",
       ru: "Классическое ванильное мороженое",
       kk: "Классикалық ванильді балмұздақ",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 800 }],
+    sizes: [{ size: "", price: 600 }],
     category: "drinks",
     subcategory: "ice-cream",
   },
   {
     id: 86,
-    name: { en: "Chocolate Ice Cream", ru: "Шоколадное мороженое", kk: "Шоколадты балмұздақ" },
+    name: { en: "Chocolate", ru: "Шоколадный", kk: "Шоколад" },
     description: {
       en: "Rich chocolate ice cream",
       ru: "Насыщенное шоколадное мороженое",
       kk: "Қою шоколадты балмұздақ",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 800 }],
+    sizes: [{ size: "", price: 600 }],
     category: "drinks",
     subcategory: "ice-cream",
   },
   {
     id: 87,
-    name: { en: "Strawberry Ice Cream", ru: "Клубничное мороженое", kk: "Құлпынай балмұздағы" },
+    name: { en: "Strawberry", ru: "Клубничный", kk: "Құлпынай" },
     description: { en: "Fresh strawberry ice cream", ru: "Клубничное мороженое", kk: "Жаңа құлпынай балмұздағы" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 800 }],
+    sizes: [{ size: "", price: 600 }],
     category: "drinks",
     subcategory: "ice-cream",
   },
   {
     id: 88,
-    name: { en: "Pistachio Ice Cream", ru: "Фисташковое мороженое", kk: "Фисташка балмұздағы" },
+    name: { en: "Pistachio", ru: "Фисташковый", kk: "Фисташка" },
     description: { en: "Creamy pistachio ice cream", ru: "Фисташковое мороженое", kk: "Кремді фисташка балмұздағы" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 900 }],
+    sizes: [{ size: "", price: 600 }],
     category: "drinks",
     subcategory: "ice-cream",
   },
   {
     id: 89,
-    name: { en: "Nut Ice Cream", ru: "Ореховое мороженое", kk: "Жаңғақ балмұздағы" },
+    name: { en: "Nut", ru: "Ореховый", kk: "Жаңғақ" },
     description: { en: "Nutty flavored ice cream", ru: "Ореховое мороженое", kk: "Жаңғақ дәмді балмұздақ" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 900 }],
+    sizes: [{ size: "", price: 600 }],
     category: "drinks",
     subcategory: "ice-cream",
   },
   {
     id: 90,
-    name: { en: "Bubble Gum Ice Cream", ru: "Бабл гам мороженое", kk: "Бабл гам балмұздағы" },
+    name: { en: "Bubble Gum", ru: "Бабл гам", kk: "Бабл гам" },
     description: {
       en: "Fun bubble gum flavored ice cream",
       ru: "Мороженое со вкусом жвачки",
       kk: "Бабл гам дәмді балмұздақ",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 800 }],
+    sizes: [{ size: "", price: 600 }],
     category: "drinks",
     subcategory: "ice-cream",
   },
@@ -1223,48 +1223,48 @@ export const menuItems = [
   },
   {
     id: 93,
-    name: { en: "Mashed Potatoes", ru: "Картофельное пюре", kk: "Картоп пюресі" },
+    name: { en: "Mashed Potatoes", ru: "Картофельное пюре", kk: "Картоп езбесі" },
     description: { en: "Creamy mashed potatoes", ru: "Картофельное пюре", kk: "Кремді картоп пюресі" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 600 }],
+    sizes: [{ size: "", price: 500 }],
     category: "sides",
     subcategory: "",
   },
   {
     id: 94,
-    name: { en: "French Fries", ru: "Картофель фри", kk: "Фри картоп" },
+    name: { en: "French Fries", ru: "Фри", kk: "Фри" },
     description: { en: "Crispy french fries", ru: "Хрустящий картофель фри", kk: "Қытырлақ фри картоп" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 600 }],
+    sizes: [{ size: "", price: 800 }],
     category: "sides",
     subcategory: "",
   },
   {
     id: 95,
-    name: { en: "Potato Wedges", ru: "Картофельные дольки", kk: "Картоп тілімдері" },
+    name: { en: "Potato wedges", ru: "Картофельные дольки", kk: "Картоп дөңгелектері" },
     description: { en: "Seasoned potato wedges", ru: "Картофельные дольки", kk: "Дәмделген картоп тілімдері" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 600 }],
+    sizes: [{ size: "", price: 800 }],
     category: "sides",
     subcategory: "",
   },
   {
     id: 96,
-    name: { en: "Charcoal-grilled Potatoes", ru: "Картофель на углях", kk: "Көмірде пісірілген картоп" },
+    name: { en: "Charcoal-grilled potatoes", ru: "Картофель на углях", kk: "От картоп" },
     description: {
       en: "Potatoes grilled on charcoal",
       ru: "Картофель, приготовленный на углях",
       kk: "Көмірде пісірілген картоп",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 700 }],
+    sizes: [{ size: "", price: 800 }],
     category: "sides",
     subcategory: "",
   },
   // Pizza
   {
     id: 97,
-    name: { en: "Nomad Pizza", ru: "Пицца Номад", kk: "Номад пиццасы" },
+    name: { en: "Nomad", ru: "Номад", kk: "Номад" },
     description: {
       en: "Kazy, red onion, sour cream",
       ru: "Казы, красный лук, сметана",
@@ -1284,7 +1284,7 @@ export const menuItems = [
       kk: "Моцарелла ірімшігі, қызанақ, қызанақ соусы",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 2800 }],
+    sizes: [{ size: "", price: 2500 }],
     category: "pizza",
     subcategory: "pizza",
   },
@@ -1310,106 +1310,106 @@ export const menuItems = [
       kk: "Тауық филесі, қызанақ, моцарелла ірімшігі, кремді соус",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 3400 }],
+    sizes: [{ size: "", price: 3200 }],
     category: "pizza",
     subcategory: "pizza",
   },
   // Pide
   {
     id: 101,
-    name: { en: "Pide Karishik", ru: "Пиде Карышик", kk: "Пиде Қарысық" },
+    name: { en: "Pide Karishik", ru: "Пиде Карышик", kk: "Қарышық пиде" },
     description: {
       en: "Mozzarella cheese, suluguni cheese, dough",
       ru: "Сыр моцарелла, сыр сулугуни, тесто",
       kk: "Моцарелла ірімшігі, сулугуни ірімшігі, қамыр",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 2500 }],
+    sizes: [{ size: "", price: 3200 }],
     category: "pizza",
     subcategory: "pide",
   },
   {
     id: 102,
-    name: { en: "Pide Mevlana", ru: "Пиде Мевлана", kk: "Пиде Мевлана" },
+    name: { en: "Pide Mevlana", ru: "Пиде Мевлана", kk: "Мевлана пиде" },
     description: {
       en: "Lamb, dough, fresh herbs",
       ru: "Баранина, тесто, свежая зелень",
       kk: "Қой еті, қамыр, жаңа жасылша",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 3000 }],
+    sizes: [{ size: "", price: 3200 }],
     category: "pizza",
     subcategory: "pide",
   },
   // Khachapuri
   {
     id: 103,
-    name: { en: "Puff Pastry Khachapuri", ru: "Слоеное хачапури", kk: "Қабатты хачапури" },
+    name: { en: "Puff Pastry Khachapuri", ru: "Слоеное хачапури", kk: "Қатпарлы хачапури" },
     description: {
       en: "Puff pastry, mozzarella cheese, suluguni cheese, butter",
       ru: "Слоеное тесто, сыр моцарелла, сыр сулугуни, масло",
       kk: "Қабатты қамыр, моцарелла ірімшігі, сулугуни ірімшігі, май",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 2800 }],
+    sizes: [{ size: "", price: 3200 }],
     category: "pizza",
     subcategory: "khachapuri",
   },
   {
     id: 104,
-    name: { en: "Baku-style Khachapuri", ru: "Хачапури по-бакински", kk: "Бакулық хачапури" },
+    name: { en: "Baku-style Khachapuri", ru: "Хачапури по-бакински", kk: "Баку хачапури" },
     description: { en: "Cheese, egg", ru: "Сыр, яйцо", kk: "Ірімшік, жұмыртқа" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 2600 }],
+    sizes: [{ size: "", price: 3200 }],
     category: "pizza",
     subcategory: "khachapuri",
   },
   // Banquet
   {
     id: 105,
-    name: { en: "Kebab Mix (8 persons)", ru: "Кебаб микс (8 персон)", kk: "Кебаб микс (8 адам)" },
+    name: { en: "Kebab Mix (8 persons)", ru: "Кебаб микс (8 персон)", kk: "Кебаб микс (8 кісілік)" },
     description: {
       en: "Lamb, Shish Taouk, chicken wings, Izmir Kofte, Adana Kebab, Lula Kebab, Yaprak Shashlik, Pirzola, charcoal-grilled potatoes, grilled vegetables",
       ru: "Баранина, шиш-таук, куриные крылышки, измир кофте, адана кебаб, люля кебаб, япрак шашлык, пирзола, картофель на углях, овощи-гриль",
-      kk: "Қой еті, шиш-таук, тауық қанаттары, измир көфте, адана кебаб, люля кебаб, жапырақ шашлық, пирзола, көмірдегі картоп, гриль көкөністер",
+      kk: "Қой еті, шиш-таук, тауық қанаттары, измир көфте, адана кебаб, люля кебаб, жапырақ шашлык, пирзола, көмірдегі картоп, гриль көкөністер",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 35000 }],
+    sizes: [{ size: "", price: 36100 }],
     category: "banquet",
     subcategory: "",
   },
   {
     id: 106,
-    name: { en: "Turan Mix (8 persons)", ru: "Туран микс (8 персон)", kk: "Тұран микс (8 адам)" },
+    name: { en: "Turan Mix (8 persons)", ru: "Туран микс (8 персон)", kk: "Тұран микс (8 кісілік)" },
     description: {
       en: "Nomad roll, ribs in Kumis, Orama Shuzhyk, Tok Zhilik, Chyz-Byz with Katyk, Manti, Kazy, charcoal-grilled potatoes, grilled vegetables, potato wedges, lettuce, and salsa sauce",
       ru: "Nomad roll, ребрышки в кумысе, орама шужык, ток жилик, чыз-быз с катыком, манты, казы, картофель на углях, овощи на гриле, картофельные дольки, листья салата и соус сальса",
       kk: "Nomad roll, қымыздағы қабырғалар, орама шұжық, тоқ жілік, шыз-быз қатықпен, манты, қазы, көмірдегі картоп, гриль көкөністер, картоп тілімдері, салат жапырақтары және сальса соусы",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 45000 }],
+    sizes: [{ size: "", price: 36100 }],
     category: "banquet",
     subcategory: "",
   },
   {
     id: 107,
-    name: { en: "Toi Tabak (6 persons)", ru: "Той табак (6 персон)", kk: "Той табақ (6 адам)" },
+    name: { en: "Toi Tabak (6 persons)", ru: "Той табак (6 персон)", kk: "Той табақ (6 кісілік)" },
     description: { en: "Horse meat, Kazy", ru: "Мясо конины, казы", kk: "Жылқы еті, қазы" },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 25000 }],
+    sizes: [{ size: "", price: 24000 }],
     category: "banquet",
     subcategory: "",
   },
   {
     id: 108,
-    name: { en: "Plov in Veil (6 persons)", ru: "Плов в вуали (6 персон)", kk: "Қамырдағы палау (6 адам)" },
+    name: { en: "Plov in Veil (6 persons)", ru: "Плов в вуали (6 персон)", kk: "Перде палау (6 кісілік)" },
     description: {
       en: "Beef, rice, tender pastry",
       ru: "Говядина, рис, нежное тесто",
       kk: "Сиыр еті, күріш, жұмсақ қамыр",
     },
     image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 22000 }],
+    sizes: [{ size: "", price: 18000 }],
     category: "banquet",
     subcategory: "",
   },
