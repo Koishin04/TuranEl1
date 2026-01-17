@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Plus } from "lucide-react"
+import { Plus, Minus } from "lucide-react"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Button } from "@/components/ui/button"
@@ -25,11 +25,13 @@ interface MenuItemProps {
 export function MenuItem({ id, name, description, image, sizes }: MenuItemProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedSizeIndex, setSelectedSizeIndex] = useState(0)
-  const { addItem } = useCart()
+  const { items, addItem, updateQuantity, removeItem } = useCart()
 
   const formatPrice = (price: number) => {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
   }
+
+  const cartItemsForProduct = items.filter((item) => item.id === String(id))
 
   const handleAddToCart = () => {
     const selectedSize = sizes[selectedSizeIndex]
@@ -50,8 +52,20 @@ export function MenuItem({ id, name, description, image, sizes }: MenuItemProps)
     setIsOpen(true)
   }
 
+  const handleInlineIncrease = (itemSize: string, currentQuantity: number) => {
+    updateQuantity(String(id), itemSize, currentQuantity + 1)
+  }
+
+  const handleInlineDecrease = (itemSize: string, currentQuantity: number) => {
+    if (currentQuantity <= 1) {
+      removeItem(String(id), itemSize)
+    } else {
+      updateQuantity(String(id), itemSize, currentQuantity - 1)
+    }
+  }
+
   return (
-    <>
+    <div className="space-y-0">
       <div className="flex gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
         <div className="relative h-28 w-28 flex-shrink-0 rounded-lg overflow-hidden">
           <img
@@ -86,6 +100,36 @@ export function MenuItem({ id, name, description, image, sizes }: MenuItemProps)
           </button>
         </div>
       </div>
+
+      {cartItemsForProduct.map((cartItem) => (
+        <div
+          key={`${cartItem.id}-${cartItem.size}`}
+          className="mx-4 p-4 bg-gray-50 border-x border-b border-gray-100 rounded-b-xl -mt-2"
+        >
+          <div className="flex items-center justify-between">
+            <div>
+              <h4 className="font-semibold">{cartItem.name}</h4>
+              {cartItem.size && <p className="text-sm text-gray-500">• {cartItem.size}</p>}
+              <p className="font-semibold mt-1">{formatPrice(cartItem.price)} ₸</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => handleInlineDecrease(cartItem.size, cartItem.quantity)}
+                className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+              >
+                <Minus className="w-4 h-4" />
+              </button>
+              <span className="font-semibold text-lg min-w-[20px] text-center">{cartItem.quantity}</span>
+              <button
+                onClick={() => handleInlineIncrease(cartItem.size, cartItem.quantity)}
+                className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+              >
+                <Plus className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-md p-0 bg-white overflow-hidden">
@@ -141,6 +185,6 @@ export function MenuItem({ id, name, description, image, sizes }: MenuItemProps)
           </div>
         </DialogContent>
       </Dialog>
-    </>
+    </div>
   )
 }
