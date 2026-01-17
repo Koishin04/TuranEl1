@@ -1,6 +1,7 @@
 "use client"
 
-import { Minus, Plus, ChevronLeft } from "lucide-react"
+import { useState } from "react"
+import { Minus, Plus, ChevronLeft, UtensilsCrossed } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useCart } from "@/lib/cart-context"
 
@@ -9,17 +10,71 @@ interface CartPageProps {
 }
 
 export function CartPage({ onBack }: CartPageProps) {
-  const { items, updateQuantity, totalPrice, clearCart } = useCart()
+  const { items, updateQuantity, totalPrice } = useCart()
+  const [showReceipt, setShowReceipt] = useState(false)
 
   const formatPrice = (price: number) => {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
   }
 
   const handleShowToWaiter = () => {
-    // Show confirmation or alert
-    alert("Ваш заказ готов к показу официанту!")
+    setShowReceipt(true)
   }
 
+  if (showReceipt) {
+    return (
+      <div className="min-h-screen bg-gray-50 p-4">
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-sm overflow-hidden">
+          {/* Receipt Header */}
+          <div className="bg-gray-100 px-6 py-4 flex items-center gap-3">
+            <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+              <UtensilsCrossed className="w-4 h-4" />
+            </div>
+            <h1 className="text-xl font-bold">Ваш заказ</h1>
+          </div>
+
+          {/* Receipt Items */}
+          <div className="px-6 py-4">
+            {items.map((item, index) => (
+              <div key={`${item.id}-${item.size}`} className="py-3 border-b border-gray-100 last:border-0">
+                <div className="flex justify-between items-start">
+                  <span className="font-medium">{item.name}</span>
+                  <span className="font-medium">{formatPrice(item.price * item.quantity)} ₸</span>
+                </div>
+                {item.size && (
+                  <div className="flex justify-between items-center mt-1">
+                    <span className="text-sm text-gray-500">• {item.size}</span>
+                    <span className="text-sm text-gray-500">{formatPrice(item.price * item.quantity)} ₸</span>
+                  </div>
+                )}
+                {item.quantity > 1 && <div className="text-sm text-gray-500 mt-1">x{item.quantity}</div>}
+              </div>
+            ))}
+
+            {/* Total */}
+            <div className="pt-4 mt-2 border-t border-gray-200">
+              <div className="flex justify-between items-center">
+                <span className="font-medium"></span>
+                <span className="font-bold text-lg">{formatPrice(totalPrice)} ₸</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Back to Menu Button */}
+        <div className="flex justify-center mt-8">
+          <button onClick={onBack} className="flex items-center gap-2 text-lg font-medium">
+            <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center">
+              <ChevronLeft className="w-5 h-5 text-white" />
+            </div>
+            <span>К меню</span>
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  // Existing code
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
