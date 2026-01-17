@@ -104,27 +104,27 @@ export function MenuItem({ id, name, description, image, sizes }: MenuItemProps)
       {cartItemsForProduct.map((cartItem) => (
         <div
           key={`${cartItem.id}-${cartItem.size}`}
-          className="mx-4 p-4 bg-gray-50 border-x border-b border-gray-100 rounded-b-xl -mt-2"
+          className="mx-2 mt-3 p-4 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm"
         >
           <div className="flex items-center justify-between">
             <div>
-              <h4 className="font-semibold">{cartItem.name}</h4>
+              <h4 className="font-bold text-base">{cartItem.name}</h4>
               {cartItem.size && <p className="text-sm text-gray-500">• {cartItem.size}</p>}
-              <p className="font-semibold mt-1">{formatPrice(cartItem.price)} ₸</p>
+              <p className="font-bold text-base mt-1">{formatPrice(cartItem.price)} ₸</p>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <button
                 onClick={() => handleInlineDecrease(cartItem.size, cartItem.quantity)}
-                className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
               >
-                <Minus className="w-4 h-4" />
+                <Minus className="w-5 h-5 text-gray-700" />
               </button>
-              <span className="font-semibold text-lg min-w-[20px] text-center">{cartItem.quantity}</span>
+              <span className="font-bold text-xl min-w-[24px] text-center">{cartItem.quantity}</span>
               <button
                 onClick={() => handleInlineIncrease(cartItem.size, cartItem.quantity)}
-                className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
               >
-                <Plus className="w-4 h-4" />
+                <Plus className="w-5 h-5 text-gray-700" />
               </button>
             </div>
           </div>
