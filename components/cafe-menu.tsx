@@ -5,6 +5,8 @@ import { CategoryCard } from "@/components/category-card"
 import { MenuItem } from "@/components/menu-item"
 import { SubcategoryPill } from "@/components/subcategory-pill"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { CartButton } from "@/components/cart-button"
+import { CartPage } from "@/components/cart-page"
 import { categories, menuItems, translations } from "@/lib/menu-data"
 
 export type Language = "en" | "ru" | "kk"
@@ -30,6 +32,7 @@ export function CafeMenu() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null)
+  const [showCart, setShowCart] = useState(false)
 
   const t = (translations: { en: string; ru: string; kk: string }) => {
     return translations[language]
@@ -79,6 +82,10 @@ export function CafeMenu() {
     }
   }
 
+  if (showCart) {
+    return <CartPage onBack={() => setShowCart(false)} />
+  }
+
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
       <div className="min-h-screen bg-white relative">
@@ -105,7 +112,7 @@ export function CafeMenu() {
           </div>
         </header>
 
-        <main className="max-w-4xl mx-auto px-4 py-6 space-y-6 relative">
+        <main className="max-w-4xl mx-auto px-4 py-6 space-y-6 relative pb-28">
           {/* Search */}
           <div className="relative">
             <svg
@@ -178,6 +185,7 @@ export function CafeMenu() {
             {filteredItems.map((item) => (
               <MenuItem
                 key={item.id}
+                id={item.id}
                 name={t(item.name)}
                 description={t(item.description)}
                 image={item.image}
@@ -189,6 +197,8 @@ export function CafeMenu() {
             )}
           </div>
         </main>
+
+        <CartButton onClick={() => setShowCart(true)} />
       </div>
     </LanguageContext.Provider>
   )
