@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Minus, Plus, ChevronLeft, UtensilsCrossed } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useCart } from "@/lib/cart-context"
+import { useLanguage } from "@/components/cafe-menu"
 
 interface CartPageProps {
   onBack: () => void
@@ -12,9 +13,20 @@ interface CartPageProps {
 export function CartPage({ onBack }: CartPageProps) {
   const { items, updateQuantity, totalPrice } = useCart()
   const [showReceipt, setShowReceipt] = useState(false)
+  const { t } = useLanguage()
 
   const formatPrice = (price: number) => {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+  }
+
+  // Translations
+  const translations = {
+    yourOrder: { en: "Your Order", ru: "Ваш заказ", kk: "Сіздің тапсырысыңыз" },
+    backToMenu: { en: "Back to menu", ru: "К меню", kk: "Мәзірге қайту" },
+    cartEmpty: { en: "Cart is empty", ru: "Корзина пуста", kk: "Себет бос" },
+    subtotal: { en: "Subtotal", ru: "Итого", kk: "Барлығы" },
+    total: { en: "Total", ru: "Полная стоимость", kk: "Жалпы сома" },
+    showToWaiter: { en: "Show to waiter", ru: "Показать официанту", kk: "Даяшыға көрсету" },
   }
 
   const handleShowToWaiter = () => {
@@ -30,7 +42,7 @@ export function CartPage({ onBack }: CartPageProps) {
             <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
               <UtensilsCrossed className="w-4 h-4" />
             </div>
-            <h1 className="text-xl font-bold">Ваш заказ</h1>
+            <h1 className="text-xl font-bold">{t(translations.yourOrder)}</h1>
           </div>
 
           {/* Receipt Items */}
@@ -67,7 +79,7 @@ export function CartPage({ onBack }: CartPageProps) {
             <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center">
               <ChevronLeft className="w-5 h-5 text-white" />
             </div>
-            <span>К меню</span>
+            <span>{t(translations.backToMenu)}</span>
           </button>
         </div>
       </div>
@@ -86,14 +98,14 @@ export function CartPage({ onBack }: CartPageProps) {
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-2xl font-bold">Ваш заказ</h1>
+          <h1 className="text-2xl font-bold">{t(translations.yourOrder)}</h1>
         </div>
       </header>
 
       {/* Cart Items */}
       <main className="max-w-4xl mx-auto p-4 pb-32">
         {items.length === 0 ? (
-          <div className="text-center py-12 text-gray-500">Корзина пуста</div>
+          <div className="text-center py-12 text-gray-500">{t(translations.cartEmpty)}</div>
         ) : (
           <div className="space-y-4">
             {items.map((item) => (
@@ -140,11 +152,11 @@ export function CartPage({ onBack }: CartPageProps) {
             {/* Totals */}
             <div className="pt-4 space-y-3">
               <div className="flex justify-between text-lg">
-                <span>Итого</span>
+                <span>{t(translations.subtotal)}</span>
                 <span className="font-bold">{formatPrice(totalPrice)} ₸</span>
               </div>
               <div className="flex justify-between text-lg border-t pt-3">
-                <span>Полная стоимость</span>
+                <span>{t(translations.total)}</span>
                 <span className="font-bold">{formatPrice(totalPrice)} ₸</span>
               </div>
             </div>
@@ -160,7 +172,7 @@ export function CartPage({ onBack }: CartPageProps) {
               onClick={handleShowToWaiter}
               className="w-full h-14 text-lg font-medium bg-black hover:bg-gray-800 text-white rounded-full"
             >
-              Показать официанту
+{t(translations.showToWaiter)}
             </Button>
           </div>
         </div>

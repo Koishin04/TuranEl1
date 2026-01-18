@@ -8,6 +8,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Button } from "@/components/ui/button"
 import { useCart } from "@/lib/cart-context"
+import { useLanguage } from "@/components/cafe-menu"
 
 interface Size {
   size: string
@@ -26,6 +27,13 @@ export function MenuItem({ id, name, description, image, sizes }: MenuItemProps)
   const [isOpen, setIsOpen] = useState(false)
   const [selectedSizeIndex, setSelectedSizeIndex] = useState(0)
   const { items, addItem, updateQuantity, removeItem } = useCart()
+  const { t } = useLanguage()
+
+  const translations = {
+    standard: { en: "Standard", ru: "Стандарт", kk: "Стандарт" },
+    price: { en: "Price", ru: "Цена", kk: "Бағасы" },
+    add: { en: "Add", ru: "Добавить", kk: "Қосу" },
+  }
 
   const formatPrice = (price: number) => {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
@@ -163,15 +171,15 @@ export function MenuItem({ id, name, description, image, sizes }: MenuItemProps)
                   <label key={index} className="flex items-center gap-3 cursor-pointer">
                     <RadioGroupItem value={String(index)} className="w-5 h-5" />
                     <div className="flex-1">
-                      <span className="font-medium">{size.size || "Стандарт"}</span>
-                      <p className="text-sm text-gray-500">Цена: {formatPrice(size.price)} ₸</p>
+                      <span className="font-medium">{size.size || t(translations.standard)}</span>
+                      <p className="text-sm text-gray-500">{t(translations.price)}: {formatPrice(size.price)} ₸</p>
                     </div>
                   </label>
                 ))}
               </RadioGroup>
             ) : (
               <div className="py-2">
-                <span className="text-gray-600">{sizes[0].size || "Стандарт"}</span>
+                <span className="text-gray-600">{sizes[0].size || t(translations.standard)}</span>
               </div>
             )}
 
@@ -180,7 +188,7 @@ export function MenuItem({ id, name, description, image, sizes }: MenuItemProps)
               onClick={handleAddToCart}
               className="w-full h-14 text-lg font-medium bg-black hover:bg-gray-800 text-white rounded-full"
             >
-              Добавить
+              {t(translations.add)}
             </Button>
           </div>
         </DialogContent>
