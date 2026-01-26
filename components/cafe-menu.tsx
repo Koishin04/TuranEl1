@@ -30,7 +30,7 @@ export function useLanguage() {
 export function CafeMenu() {
   const [language, setLanguage] = useState<Language>("kk")
   const [searchQuery, setSearchQuery] = useState("")
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const [selectedCategory, setSelectedCategory] = useState<string | null>("hot-dishes")
   const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null)
   const [showCart, setShowCart] = useState(false)
 
