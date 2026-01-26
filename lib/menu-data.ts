@@ -1308,23 +1308,4 @@ export const translations = {
     ru: "Найдено результатов",
     kk: "Нәтижелер табылды",
   },
-  currency: { en: "₸", ru: "₸", kk: "₸" },
-  specialOffer: { en: "Special Offer!", ru: "Специальное предложение!", kk: "Арнайы ұсыныс!" },
-  offerText: {
-    en: "20% off on all breakfast items",
-    ru: "20% скидка на все завтраки",
-    kk: "Барлық таңғы астарға 20% жеңілдік",
-  },
-  newArrivals: { en: "New Arrivals", ru: "Новинки", kk: "Жаңа түсімдер" },
-  newArrivalsText: {
-    en: "Try our seasonal specials",
-    ru: "Попробуйте сезонные блюда",
-    kk: "Маусымдық тағамдарды татып көріңіз",
-  },
-  happyHour: { en: "Happy Hour", ru: "Счастливый час", kk: "Бақытты сағат" },
-  happyHourText: {
-    en: "2-5 PM: Buy 1 Get 1 Free",
-    ru: "14:00-17:00: Купи 1, получи 1 бесплатно",
-    kk: "14:00-17:00: 1 сатып ал, 1 тегін ал",
-  },
 }
