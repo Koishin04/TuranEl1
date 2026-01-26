@@ -2,7 +2,7 @@ export const categories = [
   {
     id: "hot-dishes",
     name: { en: "Hot Dishes", ru: "Горячие блюда", kk: "Ыстық тағамдар" },
-    image: "/hot-kazakh-dishes-besbarmak.jpg",
+    image: "/IMG_8315.JPG",
     subcategories: [
       { id: "traditional", name: { en: "Traditional", ru: "Традиционные", kk: "Дәстүрлі" } },
       { id: "steaks", name: { en: "Steaks", ru: "Стейки", kk: "Стейктер" } },
@@ -13,7 +13,7 @@ export const categories = [
   {
     id: "fire-dishes",
     name: { en: "Dishes on Fire", ru: "Блюда на огне", kk: "Отта қуырылған тағамдар" },
-    image: "/grilled-kebab-shashlik.jpg",
+    image: "/IMG_8355.PNG",
     subcategories: [
       { id: "kebabs", name: { en: "Kebabs", ru: "Кебабы", kk: "Кебаптар" } },
       { id: "shashlik", name: { en: "Shashlik", ru: "Шашлык", kk: "Шашлық" } },
@@ -22,7 +22,7 @@ export const categories = [
   {
     id: "soups",
     name: { en: "Soups", ru: "Супы", kk: "Көжелер" },
-    image: "/traditional-kazakh-soup-shorpo.jpg",
+    image: "/IMG_8382.PNG",
     subcategories: [
       { id: "meat-soups", name: { en: "Meat Soups", ru: "Мясные супы", kk: "Еттен жасалған көжелер" } },
       { id: "fish-soups", name: { en: "Fish Soups", ru: "Рыбные супы", kk: "Балық көжелері" } },
@@ -31,7 +31,7 @@ export const categories = [
   {
     id: "bakery",
     name: { en: "Bakery", ru: "Выпечка", kk: "Қамыр тағамдары" },
-    image: "/baursak-traditional-bread.jpg",
+    image: "/IMG_8364.PNG",
     subcategories: [
       { id: "bread", name: { en: "Bread", ru: "Хлеб", kk: "Нан" } },
       { id: "pastries", name: { en: "Pastries", ru: "Выпечка", kk: "Пісірілген тағамдар" } },
@@ -40,7 +40,7 @@ export const categories = [
   {
     id: "snacks",
     name: { en: "Snacks", ru: "Закуски", kk: "Жеңіл ас" },
-    image: "/appetizer-snack-platter.jpg",
+    image: "/IMG_8400.PNG",
     subcategories: [
       { id: "cold-snacks", name: { en: "Cold Snacks", ru: "Холодные закуски", kk: "Суық тағамдар" } },
       { id: "hot-snacks", name: { en: "Hot Snacks", ru: "Горячие закуски", kk: "Ыстық тағамдар" } },
@@ -49,7 +49,7 @@ export const categories = [
   {
     id: "salads",
     name: { en: "Salads", ru: "Салаты", kk: "Салаттар" },
-    image: "/fresh-salad-vegetables.jpg",
+    image: "/IMG_8346.JPG",
     subcategories: [
       { id: "vegetable", name: { en: "Vegetable", ru: "Овощные", kk: "Көкөністі" } },
       { id: "meat-salads", name: { en: "With Meat", ru: "С мясом", kk: "Еттен жасалған" } },
@@ -1191,6 +1191,109 @@ export const menuItems = [
     sizes: [{ size: "", price: 600 }],
     category: "drinks",
     subcategory: "ice-cream",
+  },
+  // Pizza
+  {
+    id: 97,
+    name: { en: "Nomad", ru: "Номад", kk: "Номад" },
+    description: {
+      en: "Kazy, red onion, sour cream",
+      ru: "Казы, красный лук, сметана",
+      kk: "Қазы, қызыл пияз, сметана",
+    },
+    image: "/IMG_8365.PNG",
+    sizes: [{ size: "", price: 3500 }],
+    category: "pizza",
+    subcategory: "pizza",
+  },
+  {
+    id: 98,
+    name: { en: "Margherita", ru: "Маргарита", kk: "Маргарита" },
+    description: {
+      en: "Mozzarella cheese, tomatoes, tomato sauce",
+      ru: "Сыр моцарелла, томаты, томатный соус",
+      kk: "Моцарелла ірімшігі, қызанақ, қызанақ соусы",
+    },
+    image: "IMG_8490.jpg",
+    sizes: [{ size: "", price: 2500 }],
+    category: "pizza",
+    subcategory: "pizza",
+  },
+  {
+    id: 99,
+    name: { en: "Pepperoni", ru: "Пепперони", kk: "Пепперони" },
+    description: {
+      en: "Mozzarella cheese, tomatoes, pepperoni, tomato sauce",
+      ru: "Сыр моцарелла, томаты, пепперони, томатный соус",
+      kk: "Моцарелла ірімшігі, қызанақ, пепперони, қызанақ соусы",
+    },
+    image: "/IMG_8369.PNG",
+    sizes: [{ size: "", price: 3200 }],
+    category: "pizza",
+    subcategory: "pizza",
+  },
+  {
+    id: 100,
+    name: { en: "Chicken Mozzarella", ru: "Курица-моцарелла", kk: "Тауық-моцарелла" },
+    description: {
+      en: "Chicken fillet, tomatoes, mozzarella cheese, creamy sauce",
+      ru: "Куриное филе, томаты, сыр моцарелла, сливочный соус",
+      kk: "Тауық филесі, қызанақ, моцарелла ірімшігі, кремді соус",
+    },
+    image: "/IMG_8311.JPG",
+    sizes: [{ size: "", price: 3200 }],
+    category: "pizza",
+    subcategory: "pizza",
+  },
+  // Pide
+  {
+    id: 101,
+    name: { en: "Pide Karishik", ru: "Пиде Карышик", kk: "Қарышық пиде" },
+    description: {
+      en: "Mozzarella cheese, suluguni cheese, dough",
+      ru: "Сыр моцарелла, сыр сулугуни, тесто",
+      kk: "Моцарелла ірімшігі, сулугуни ірімшігі, қамыр",
+    },
+    image: "/IMG_8314.JPG",
+    sizes: [{ size: "", price: 3200 }],
+    category: "pizza",
+    subcategory: "pide",
+  },
+  {
+    id: 102,
+    name: { en: "Pide Mevlana", ru: "Пиде Мевлана", kk: "Мевлана пиде" },
+    description: {
+      en: "Lamb, dough, fresh herbs",
+      ru: "Баранина, тесто, свежая зелень",
+      kk: "Қой еті, қамыр, жаңа жасылша",
+    },
+    image: "/IMG_8368.PNG",
+    sizes: [{ size: "", price: 3200 }],
+    category: "pizza",
+    subcategory: "pide",
+  },
+  // Khachapuri
+  {
+    id: 103,
+    name: { en: "Puff Pastry Khachapuri", ru: "Слоеное хачапури", kk: "Қатпарлы хачапури" },
+    description: {
+      en: "Puff pastry, mozzarella cheese, suluguni cheese, butter",
+      ru: "Слоеное тесто, сыр моцарелла, сыр сулугуни, масло",
+      kk: "Қабатты қамыр, моцарелла ірімшігі, сулугуни ірімшігі, май",
+    },
+    image: "/IMG_8313.JPG",
+    sizes: [{ size: "", price: 3200 }],
+    category: "pizza",
+    subcategory: "khachapuri",
+  },
+  {
+    id: 104,
+    name: { en: "Baku-style Khachapuri", ru: "Хачапури по-бакински", kk: "Баку хачапури" },
+    description: { en: "Cheese, egg", ru: "Сыр, яйцо", kk: "Ірімшік, жұмыртқа" },
+    image: "/IMG_8363.PNG",
+    sizes: [{ size: "", price: 3200 }],
+    category: "pizza",
+    subcategory: "khachapuri",
   },
 ]
 export const translations = {
