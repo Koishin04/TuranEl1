@@ -16,7 +16,7 @@ export const categories = [
     image: "/grilled-kebab-shashlik.jpg",
     subcategories: [
       { id: "kebabs", name: { en: "Kebabs", ru: "Кебабы", kk: "Кебаптар" } },
-      { id: "shashlik", name: { en: "Shashlik", ru: "Шашлык", kk: "шашлык" } },
+      { id: "shashlik", name: { en: "Shashlik", ru: "Шашлык", kk: "Шашлық" } },
     ],
   },
   {
@@ -67,12 +67,7 @@ export const categories = [
       { id: "ice-cream", name: { en: "Ice Cream", ru: "Мороженое", kk: "Балмұздақ" } },
     ],
   },
-  {
-    id: "sides",
-    name: { en: "Sides", ru: "Гарниры", kk: "Гарнирлер" },
-    image: "/rice-bulgur-side-dish.jpg",
-    subcategories: [],
-  },
+
   {
     id: "pizza",
     name: { en: "Pizza & Pide", ru: "Пицца и пиде", kk: "Пицца және пиде" },
@@ -83,12 +78,7 @@ export const categories = [
       { id: "khachapuri", name: { en: "Khachapuri", ru: "Хачапури", kk: "Хачапури" } },
     ],
   },
-  {
-    id: "banquet",
-    name: { en: "Banquet", ru: "Банкетные блюда", kk: "Банкет тағамдары" },
-    image: "/banquet-feast-platter.jpg",
-    subcategories: [],
-  },
+
 ]
 
 export const menuItems = [
@@ -1202,219 +1192,7 @@ export const menuItems = [
     category: "drinks",
     subcategory: "ice-cream",
   },
-  // Sides
-  {
-    id: 91,
-    name: { en: "Rice", ru: "Рис", kk: "Күріш" },
-    description: { en: "Steamed rice", ru: "Отварной рис", kk: "Буланған күріш" },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 500 }],
-    category: "sides",
-    subcategory: "",
-  },
-  {
-    id: 92,
-    name: { en: "Bulgur", ru: "Булгур", kk: "Булгур" },
-    description: { en: "Steamed bulgur wheat", ru: "Отварной булгур", kk: "Буланған булгур" },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 500 }],
-    category: "sides",
-    subcategory: "",
-  },
-  {
-    id: 93,
-    name: { en: "Mashed Potatoes", ru: "Картофельное пюре", kk: "Картоп езбесі" },
-    description: { en: "Creamy mashed potatoes", ru: "Картофельное пюре", kk: "Кремді картоп пюресі" },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 500 }],
-    category: "sides",
-    subcategory: "",
-  },
-  {
-    id: 94,
-    name: { en: "French Fries", ru: "Фри", kk: "Фри" },
-    description: { en: "Crispy french fries", ru: "Хрустящий картофель фри", kk: "Қытырлақ фри картоп" },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 800 }],
-    category: "sides",
-    subcategory: "",
-  },
-  {
-    id: 95,
-    name: { en: "Potato wedges", ru: "Картофельные дольки", kk: "Картоп дөңгелектері" },
-    description: { en: "Seasoned potato wedges", ru: "Картофельные дольки", kk: "Дәмделген картоп тілімдері" },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 800 }],
-    category: "sides",
-    subcategory: "",
-  },
-  {
-    id: 96,
-    name: { en: "Charcoal-grilled potatoes", ru: "Картофель на углях", kk: "От картоп" },
-    description: {
-      en: "Potatoes grilled on charcoal",
-      ru: "Картофель, приготовленный на углях",
-      kk: "Көмірде пісірілген картоп",
-    },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 800 }],
-    category: "sides",
-    subcategory: "",
-  },
-  // Pizza
-  {
-    id: 97,
-    name: { en: "Nomad", ru: "Номад", kk: "Номад" },
-    description: {
-      en: "Kazy, red onion, sour cream",
-      ru: "Казы, красный лук, сметана",
-      kk: "Қазы, қызыл пияз, сметана",
-    },
-    image: "/IMG_8365.PNG",
-    sizes: [{ size: "", price: 3500 }],
-    category: "pizza",
-    subcategory: "pizza",
-  },
-  {
-    id: 98,
-    name: { en: "Margherita", ru: "Маргарита", kk: "Маргарита" },
-    description: {
-      en: "Mozzarella cheese, tomatoes, tomato sauce",
-      ru: "Сыр моцарелла, томаты, томатный соус",
-      kk: "Моцарелла ірімшігі, қызанақ, қызанақ соусы",
-    },
-    image: "IMG_8490.jpg",
-    sizes: [{ size: "", price: 2500 }],
-    category: "pizza",
-    subcategory: "pizza",
-  },
-  {
-    id: 99,
-    name: { en: "Pepperoni", ru: "Пепперони", kk: "Пепперони" },
-    description: {
-      en: "Mozzarella cheese, tomatoes, pepperoni, tomato sauce",
-      ru: "Сыр моцарелла, томаты, пепперони, томатный соус",
-      kk: "Моцарелла ірімшігі, қызанақ, пепперони, қызанақ соусы",
-    },
-    image: "/IMG_8369.PNG",
-    sizes: [{ size: "", price: 3200 }],
-    category: "pizza",
-    subcategory: "pizza",
-  },
-  {
-    id: 100,
-    name: { en: "Chicken Mozzarella", ru: "Курица-моцарелла", kk: "Тауық-моцарелла" },
-    description: {
-      en: "Chicken fillet, tomatoes, mozzarella cheese, creamy sauce",
-      ru: "Куриное филе, томаты, сыр моцарелла, сливочный соус",
-      kk: "Тауық филесі, қызанақ, моцарелла ірімшігі, кремді соус",
-    },
-    image: "/IMG_8311.JPG",
-    sizes: [{ size: "", price: 3200 }],
-    category: "pizza",
-    subcategory: "pizza",
-  },
-  // Pide
-  {
-    id: 101,
-    name: { en: "Pide Karishik", ru: "Пиде Карышик", kk: "Қарышық пиде" },
-    description: {
-      en: "Mozzarella cheese, suluguni cheese, dough",
-      ru: "Сыр моцарелла, сыр сулугуни, тесто",
-      kk: "Моцарелла ірімшігі, сулугуни ірімшігі, қамыр",
-    },
-    image: "/IMG_8314.JPG",
-    sizes: [{ size: "", price: 3200 }],
-    category: "pizza",
-    subcategory: "pide",
-  },
-  {
-    id: 102,
-    name: { en: "Pide Mevlana", ru: "Пиде Мевлана", kk: "Мевлана пиде" },
-    description: {
-      en: "Lamb, dough, fresh herbs",
-      ru: "Баранина, тесто, свежая зелень",
-      kk: "Қой еті, қамыр, жаңа жасылша",
-    },
-    image: "/IMG_8368.PNG",
-    sizes: [{ size: "", price: 3200 }],
-    category: "pizza",
-    subcategory: "pide",
-  },
-  // Khachapuri
-  {
-    id: 103,
-    name: { en: "Puff Pastry Khachapuri", ru: "Слоеное хачапури", kk: "Қатпарлы хачапури" },
-    description: {
-      en: "Puff pastry, mozzarella cheese, suluguni cheese, butter",
-      ru: "Слоеное тесто, сыр моцарелла, сыр сулугуни, масло",
-      kk: "Қабатты қамыр, моцарелла ірімшігі, сулугуни ірімшігі, май",
-    },
-    image: "/IMG_8313.JPG",
-    sizes: [{ size: "", price: 3200 }],
-    category: "pizza",
-    subcategory: "khachapuri",
-  },
-  {
-    id: 104,
-    name: { en: "Baku-style Khachapuri", ru: "Хачапури по-бакински", kk: "Баку хачапури" },
-    description: { en: "Cheese, egg", ru: "Сыр, яйцо", kk: "Ірімшік, жұмыртқа" },
-    image: "/IMG_8363.PNG",
-    sizes: [{ size: "", price: 3200 }],
-    category: "pizza",
-    subcategory: "khachapuri",
-  },
-  // Banquet
-  {
-    id: 105,
-    name: { en: "Kebab Mix (8 persons)", ru: "Кебаб микс (8 персон)", kk: "Кебаб микс (8 кісілік)" },
-    description: {
-      en: "Lamb, Shish Taouk, chicken wings, Izmir Kofte, Adana Kebab, Lula Kebab, Yaprak Shashlik, Pirzola, charcoal-grilled potatoes, grilled vegetables",
-      ru: "Баранина, шиш-таук, куриные крылышки, измир кофте, адана кебаб, люля кебаб, япрак шашлык, пирзола, картофель на углях, овощи-гриль",
-      kk: "Қой еті, шиш-таук, тауық қанаттары, измир көфте, адана кебаб, люля кебаб, жапырақ шашлык, пирзола, көмірдегі картоп, гриль көкөністер",
-    },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 36100 }],
-    category: "banquet",
-    subcategory: "",
-  },
-  {
-    id: 106,
-    name: { en: "Turan Mix (8 persons)", ru: "Туран микс (8 персон)", kk: "Тұран микс (8 кісілік)" },
-    description: {
-      en: "Nomad roll, ribs in Kumis, Orama Shuzhyk, Tok Zhilik, Chyz-Byz with Katyk, Manti, Kazy, charcoal-grilled potatoes, grilled vegetables, potato wedges, lettuce, and salsa sauce",
-      ru: "Nomad roll, ребрышки в кумысе, орама шужык, ток жилик, чыз-быз с катыком, манты, казы, картофель на углях, овощи на гриле, картофельные дольки, листья салата и соус сальса",
-      kk: "Nomad roll, қымыздағы қабырғалар, орама шұжық, тоқ жілік, шыз-быз қатықпен, манты, қазы, көмірдегі картоп, гриль көкөністер, картоп тілімдері, салат жапырақтары және сальса соусы",
-    },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 36100 }],
-    category: "banquet",
-    subcategory: "",
-  },
-  {
-    id: 107,
-    name: { en: "Toi Tabak (6 persons)", ru: "Той табак (6 персон)", kk: "Той табақ (6 кісілік)" },
-    description: { en: "Horse meat, Kazy", ru: "Мясо конины, казы", kk: "Жылқы еті, қазы" },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 24000 }],
-    category: "banquet",
-    subcategory: "",
-  },
-  {
-    id: 108,
-    name: { en: "Plov in Veil (6 persons)", ru: "Плов в вуали (6 персон)", kk: "Перде палау (6 кісілік)" },
-    description: {
-      en: "Beef, rice, tender pastry",
-      ru: "Говядина, рис, нежное тесто",
-      kk: "Сиыр еті, күріш, жұмсақ қамыр",
-    },
-    image: "/placeholder.svg?height=112&width=112",
-    sizes: [{ size: "", price: 18000 }],
-    category: "banquet",
-    subcategory: "",
-  },
 ]
-
 export const translations = {
   search: { en: "Search menu...", ru: "Поиск...", kk: "Іздеу..." },
   noItems: {
