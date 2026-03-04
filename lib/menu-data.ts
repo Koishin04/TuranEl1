@@ -58,7 +58,7 @@ export const categories = [
   {
     id: "drinks",
     name: { en: "Drinks", ru: "Напитки", kk: "Сусындар" },
-    image: "/traditional-drinks-ayran-kumis.jpg",
+    image: "/IMG_8591.PNG",
     subcategories: [
       { id: "traditional-drinks", name: { en: "Traditional", ru: "Традиционные", kk: "Дәстүрлі" } },
       { id: "lemonades", name: { en: "Lemonades", ru: "Лимонады", kk: "Лимонадтар" } },
@@ -71,7 +71,7 @@ export const categories = [
   {
     id: "pizza",
     name: { en: "Pizza & Pide", ru: "Пицца и пиде", kk: "Пицца және пиде" },
-    image: "/pizza-pide-khachapuri.jpg",
+    image: "/IMG_8365.PNG",
     subcategories: [
       { id: "pizza", name: { en: "Pizza", ru: "Пицца", kk: "Пицца" } },
       { id: "pide", name: { en: "Pide", ru: "Пиде", kk: "Пиде" } },
@@ -550,7 +550,7 @@ export const menuItems = [
     id: 38,
     name: { en: "Taba Nan", ru: "Таба нан", kk: "Таба нан" },
     description: { en: "Pan-baked bread", ru: "Хлеб, испеченный в сковороде", kk: "Табада пісірілген нан" },
-    image: "/placeholder.svg?height=112&width=112",
+    image: "/IMG_8594.PNG",
     sizes: [{ size: "", price: 600 }],
     category: "bakery",
     subcategory: "bread",
